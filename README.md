@@ -1,4 +1,3 @@
-original project by emozgun in trukish(https://github.com/emozgun/delphi-android-SAF), translated to english
 # Delphi - Android Scoped Storage : Storage Access Framework SAF API
 
 ![](https://img.shields.io/badge/ObjectPascal-Delphi-red)
