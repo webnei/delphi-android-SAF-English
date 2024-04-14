@@ -1,0 +1,354 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ActiveControl = tiUriAl
+  Caption = 'Form1'
+  ClientHeight = 637
+  ClientWidth = 498
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 498.000000000000000000
+    Size.Height = 637.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    OnChange = TabControl1Change
+    Sizes = (
+      498s
+      588s
+      498s
+      588s
+      498s
+      588s
+      498s
+      588s
+      498s
+      588s)
+    object tiUriAl: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 99.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'get URI'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object btnAllowAccessAnArray: TButton
+        Align = Top
+        Position.Y = 66.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Grant access to the contents of a directory'
+        OnClick = btnAllowAccessAnArrayClick
+      end
+      object btnOpenAFile: TButton
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Open a file'
+        OnClick = btnOpenAFileClick
+      end
+      object btnCreateANewFile: TButton
+        Align = Top
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Create a new file'
+      end
+      object Panel1: TPanel
+        Align = Client
+        Size.Width = 498.000000000000000000
+        Size.Height = 456.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Memo1: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          ReadOnly = True
+          TextSettings.WordWrap = True
+          Align = Client
+          Size.Width = 498.000000000000000000
+          Size.Height = 419.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 490.000000000000000000
+          Viewport.Height = 411.000000000000000000
+        end
+        object MemoUri: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          OnTap = MemoUriTap
+          DataDetectorTypes = []
+          ReadOnly = True
+          StyledSettings = [Family, Style, FontColor]
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.WordWrap = True
+          Align = Bottom
+          Position.Y = 419.000000000000000000
+          Size.Width = 498.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Viewport.Width = 490.000000000000000000
+          Viewport.Height = 29.000000000000000000
+        end
+        object btnKanSelectDirectory: TButton
+          Align = Top
+          Size.Width = 498.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Select Directory Kan (Ignore!)'
+          Visible = False
+          OnClick = btnKanSelectDirectoryClick
+        end
+      end
+      object btnGetAnyFileUri: TButton
+        Align = Top
+        Position.Y = 99.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Get any file Uri'
+        OnClick = btnGetAnyFileUriClick
+      end
+    end
+    object tiSAF1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 99.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'SAF 1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object btnDocumentOpenEntryFlow: TButton
+        Align = Top
+        Position.Y = 99.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Open document - input flow'
+        OnClick = btnDocumentOpenEntryFlowClick
+      end
+      object btnPermanentPermissions: TButton
+        Align = Top
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Permanent permissions'
+        OnClick = btnPermanentPermissionsClick
+      end
+      object btnExamineDocumentMetaData: TButton
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Examine document metadata'
+        OnClick = btnExamineDocumentMetaDataClick
+      end
+      object btnDocumentOpenBitmap: TButton
+        Align = Top
+        Position.Y = 66.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Open document - bitmap'
+        OnClick = btnDocumentOpenBitmapClick
+      end
+    end
+    object tiSAF2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 99.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'SAF 2'
+      ExplicitSize.cx = 99.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object btnOpenAVirtualFile: TButton
+        Align = Top
+        Position.Y = 66.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Open a virtual file'
+        OnClick = btnOpenAVirtualFileClick
+      end
+      object btnVirtualFileInputStream: TButton
+        Align = Top
+        Position.Y = 99.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Input stream from virtual file'
+        OnClick = btnVirtualFileInputStreamClick
+      end
+      object btnDocumentEdit: TButton
+        Align = Top
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Edit document'
+        OnClick = btnDocumentEditClick
+      end
+      object btnDocumentDelete: TButton
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Delete Document'
+        OnClick = btnDocumentDeleteClick
+      end
+    end
+    object tiIlave1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 99.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'additional 1'
+      ExplicitSize.cx = 166.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object btnTextFileRead: TButton
+        Align = Top
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Read text file'
+        OnClick = btnTextFileReadClick
+      end
+      object btnPdfShow: TButton
+        Align = Top
+        Position.Y = 66.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'show pdf'
+        OnClick = btnPdfShowClick
+      end
+      object btnPdfChoose: TButton
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'choose pdf'
+        OnClick = btnPdfChooseClick
+      end
+      object ImageControl1: TImageControl
+        Align = Right
+        Position.X = 392.000000000000000000
+        Position.Y = 132.000000000000000000
+        Size.Width = 106.000000000000000000
+        Size.Height = 456.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+      end
+      object btnShowPicture: TButton
+        Align = Top
+        Position.Y = 99.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        Text = 'show picture'
+        OnClick = btnShowPictureClick
+      end
+    end
+    object tiIlave2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 102.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'additional 2'
+      ExplicitSize.cx = 126.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object btnFileCopyInternalToExternal: TButton
+        Align = Top
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Copy file Internal -> External'
+        OnClick = btnFileCopyInternalToExternalClick
+      end
+      object btnFileCopyExternalToInternal: TButton
+        Align = Top
+        Position.Y = 33.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Copy file External -> Internal'
+        OnClick = btnFileCopyExternalToInternalClick
+      end
+      object btnFilesShare: TButton
+        Align = Top
+        Position.Y = 66.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Share files'
+        OnClick = btnFilesShareClick
+      end
+      object btnFileProvider: TButton
+        Align = Top
+        Position.Y = 99.000000000000000000
+        Size.Width = 498.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Files Provider'
+        OnClick = btnFileProviderClick
+      end
+    end
+  end
+end
